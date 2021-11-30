@@ -40,16 +40,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   })
 
-  const footerLogo = document.querySelector('.footer__logo');
-  let a = 0;
-  let b = 255;
-  let c = 11;
-  setInterval(() => {
-    /* footerLogo.style.backgroundColor = `rgb(${GetRandom()},${GetRandom()},${GetRandom()})` */
-    footerLogo.style.backgroundColor = `rgb(${a++},${b--},${c++})`
-  }, 100);
 
-  function GetRandom() {
-    return Math.floor(Math.random() * (255 - 0) + 0);
-  }
 })

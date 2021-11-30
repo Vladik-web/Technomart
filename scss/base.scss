@@ -162,3 +162,10 @@ body {
 .description {
   @include p-1;
 }
+
+.btn-reset {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}

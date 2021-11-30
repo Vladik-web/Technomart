@@ -8,6 +8,9 @@
     align-items: center;
     padding: 25px 14px 25px 28px;
     margin-bottom: 20px;
+    &.basic {
+      background-color: $basic-background;
+    }
   }
   &__head {
     @include head-2;

@@ -1,0 +1,31 @@
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  &+label {
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 27px;
+      height: 23px;
+      background: url(../../image/checkbox-off.svg)no-repeat;
+      margin-right: 0.5em;
+    }
+  }
+  &:checked+label::before {
+    background: url(../../image/choose.svg) no-repeat center;
+  }
+}
+
+.check {
+  margin-bottom: 10px;
+}
