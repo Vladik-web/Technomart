@@ -1,0 +1,14 @@
+.services {
+  background-color: $basic-background;
+  padding-top: 64px;
+  padding-bottom: 27px;
+  overflow: hidden;
+  &__inner {}
+  &__title {
+    margin-bottom: 25px;
+  }
+  &__description {
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+}

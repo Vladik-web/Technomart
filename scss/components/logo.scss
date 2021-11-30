@@ -1,0 +1,21 @@
+.logo {
+  height: 43px;
+  display: flex;
+  align-items: center;
+  padding: 0 56px;
+  justify-content: center;
+  background-color: $basic-red;
+  max-width: 220px;
+  width: 100%;
+  position: relative;
+  &::after {
+    content: '';
+    width: 100%;
+    background-color: darken(#EE3643, 10%);
+    height: 4px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+  }
+}

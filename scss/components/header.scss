@@ -1,0 +1,48 @@
+.header {
+  @include p-2;
+  color: $white;
+  background-color: $big-block;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    input {
+      &::placeholder {
+        color: $white;
+      }
+      @include p-2;
+      color: $white;
+      border: none;
+      background-color: transparent;
+    }
+  }
+  &__left {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+  }
+  &__right {
+    display: flex;
+    &-block {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+  }
+  &__btn {
+    color: inherit;
+    background-color: $basic-green;
+    border: none;
+    padding: 9px 16px;
+    @include p-2;
+    margin-left: 26px;
+  }
+}
+
+.bookmark {
+  margin-right: 50px;
+}

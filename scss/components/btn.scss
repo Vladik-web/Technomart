@@ -1,0 +1,13 @@
+.btn-all {
+  @include btn-text;
+  width: 192px;
+  height: 38px;
+  background-color: $basic-red;
+  text-align: center;
+  display: block;
+  line-height: 38px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: $white;
+}

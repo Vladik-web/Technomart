@@ -1,0 +1,17 @@
+.popular {
+  margin-bottom: 70px;
+  &__inner {}
+  &__top {
+    background-color: #F9F5F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 14px 25px 28px;
+    margin-bottom: 20px;
+  }
+  &__head {
+    @include head-2;
+    color: #32425C;
+  }
+  &__btn {}
+}

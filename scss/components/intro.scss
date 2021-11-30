@@ -1,0 +1,57 @@
+.intro {
+  background-color: $basic-background;
+  padding: 35px 0 60px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 67px;
+  }
+  &__head {
+    color: $basic-red;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 23px;
+    max-width: 198px;
+  }
+  &__tel {
+    p {
+      text-align: center;
+      @include signature;
+      color: #32425C;
+    }
+    &-link {
+      margin-bottom: 3px;
+      gap: 16px;
+      @include head-4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 50px 7px 40px;
+      border: 3px solid $white;
+      a {
+        color: $basic-red;
+        text-decoration: none;
+      }
+    }
+  }
+  &__btns {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    button {
+      img {
+        margin-right: 5px;
+      }
+      font-family: "Cuprum",
+      sans-serif;
+      font-size: 21px;
+      line-height: 21px;
+      border:none;
+      background-color: $white;
+      padding: 12px 27px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

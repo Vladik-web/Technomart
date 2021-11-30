@@ -1,0 +1,110 @@
+.footer {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__top {
+    background-color: #32425C;
+  }
+  &__place {
+    padding: 26px 0 54px 0;
+    @include p-2-c;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &>nav {
+      background-color: transparent;
+      box-shadow: none;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          /* &:not(:last-child) {
+            margin-right: 56px;
+          } */
+          a {
+            transition: .25s ease;
+            @include p-2-c;
+            color: $special-yellow;
+            &:hover {
+              text-decoration: underline;
+            }
+            &:active {
+              opacity: 0.5;
+            }
+          }
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  &__logo {
+    height: 64px;
+    img {}
+  }
+  &__nav {
+    background-color: transparent;
+    box-shadow: none;
+    ul {
+      justify-content: center;
+      margin-bottom: 0;
+      padding: 0;
+      li {
+        /*  &:not(:last-child) {
+          margin-right: 56px;
+        } */
+        a {
+          transition: .25s ease;
+          @include p-2-c;
+          &:hover {
+            text-decoration: underline;
+          }
+          &:active {
+            opacity: 0.5;
+          }
+        }
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  &__bottom {
+    background-color: $big-block;
+    padding: 35px 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+  }
+  &__cop {
+    max-width: 226px;
+    @include p-3;
+  }
+  &__soc {}
+  &__feedback {
+    display: flex;
+    gap: 50px;
+  }
+  &__parent {
+    p {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      @include p-3;
+      a {
+        transition: .25s ease;
+        color: $special-yellow;
+        &:active {
+          color: $basic-red;
+        }
+      }
+    }
+  }
+}
